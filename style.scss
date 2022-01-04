@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:ital,wght@1,600;1,700&display=swap');
+
+
+$color-main: #000249;
+$color-red: #F6490D;
+$color-white: #FAF9F0;
+$color-cyan: #1DCED8;
+$Fira: 'Fira Code', monospace;
+$Montserrat: 'Montserrat', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .btn , .btn:link , .btn:visited{
+    line-height: 128.7%;
+      display: inline-block;
+      margin-top: 4rem;
+      border: 2px solid $color-cyan;
+      border-radius: 4px;
+      color:$color-cyan;
+      text-decoration: none;
+      padding: 1.6rem 3.2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 128.7%;
+    transition: all .2s ease-in;
+  }
+  .btn:hover{
+      color:$color-white;
+      background-color: $color-cyan;
+  }
+  .section-title{
+     font-size: 3.6rem; 
+     font-weight: 700;
+     text-align: center;
+     color: $color-red;
+     margin-bottom: 7.2rem;
+  }
+  .row{
+      width: 124rem;
+    margin:0 auto;
+    //   background-color: $color-cyan;
+  }
+  html{
+    font-size: 62.5%;
+  }
+body {
+    font-family: $Fira;
+    color: $color-white;
+    font-size: 2rem;
+    background-color: $color-main ;
+    nav{
+        margin-top: 5.2rem;
+        font-weight: 500;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 6.4rem;
+            justify-content: center;
+            
+            li a,li a:link, li a:visited{
+                padding: 1rem;
+                text-decoration: none;
+                color: $color-white;
+                transition: all 0.3s ease-in-out;
+            }
+            li a:hover{
+                color: $color-red;
+            }
+            #active{
+                color:$color-red;
+            }
+            
+        }
+        
+    }
+    header{
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+        display: flex;
+        gap:3.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 85vh;
+        // background-color: red;
+        .heading{
+            // padding: ;
+            font-family: $Montserrat;
+            font-size: 6rem;
+            line-height: 1.6;
+            font-weight: 700;
+        }
+        .social-links{
+            display: flex;
+            gap:2rem;
+            .svg-twitter{
+                mask: url(images/twitter.svg);
+            }
+            .svg-linkedin{
+                mask: url(images/linkedin.svg);
+            }
+            .svg-instagram{
+                mask: url(images/instagram.svg);
+            }
+            .svg-behance{
+                mask: url(images/behance.svg);
+            }
+            .svg{
+                display: inline-block;
+                width: 4rem;
+                height: 4rem;
+                background: #656579;
+                mask-size: cover;
+                transition: all .1s ease-in;
+            }
+            .svg:hover,.svg:focus{
+                background: $color-red;
+            }
+        }
+    }
+    .feature-works{
+        display: flex;
+        flex-direction: column;
+        gap: 14rem;
+        margin-bottom: 20rem;
+        .work{
+            display: flex;
+            gap:17.8rem;
+            .list{
+                margin: 4rem 0rem 0rem 4rem;
+            }
+            .section-info,.section-image{
+                width: 50%;;
+            }
+            p{
+                line-height: 152.4%; 
+            }
+        }
+        .secttion-info-heading{
+            line-height: 126.78%;
+            margin-bottom: 1.6rem;
+            font-size: 3.2rem;
+            font-weight: 600;
+            font-family: $Montserrat;
+        }
+    }
+    .feature-works .work:nth-child(even)
+    {
+        flex-direction: row-reverse;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap:2.4rem ;
+        column-gap: 2.4rem;
+        margin-bottom: 20rem;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    margin-bottom: 3.2rem;;
+}
+
