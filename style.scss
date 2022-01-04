@@ -40,7 +40,7 @@ $Montserrat: 'Montserrat', sans-serif;
   }
   .row{
       width: 124rem;
-    margin:0 auto;
+    margin: 0 auto;
     //   background-color: $color-cyan;
   }
   html{
@@ -134,8 +134,11 @@ body {
             .list{
                 margin: 4rem 0rem 0rem 4rem;
             }
-            .section-info,.section-image{
+            .section-info{
                 width: 50%;;
+            }
+            .section-image{
+                width: 45%;
             }
             p{
                 line-height: 152.4%; 
@@ -159,6 +162,9 @@ body {
         row-gap:2.4rem ;
         column-gap: 2.4rem;
         margin-bottom: 20rem;
+        img{
+            width: 100%;
+        }
     }
 }
 footer{
